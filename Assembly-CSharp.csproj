@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\FieldOfView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
