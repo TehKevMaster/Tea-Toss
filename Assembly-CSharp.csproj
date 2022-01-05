@@ -54,7 +54,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Timer.cs" />
-    <Compile Include="Assets\FieldOfView.cs" />
+    <Compile Include="Assets\Scripts\FieldOfView.cs" />
+    <Compile Include="Assets\Scripts\TeaBehavior.cs" />
+    <Compile Include="Assets\Scripts\SpawnHandler.cs" />
+    <Compile Include="Assets\Scripts\BarrelBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

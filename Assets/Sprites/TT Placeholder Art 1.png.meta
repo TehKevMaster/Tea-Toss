@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: b5a0cd39654d52340b4e9fec04132ec6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -873740911990415135
+    second: TT Placeholder Art 1_0
+  - first:
+      213: 8989258590065846110
+    second: TT Placeholder Art 1_1
+  - first:
+      213: 2463808977122112589
+    second: TT Placeholder Art 1_2
+  - first:
+      213: -629230568712094606
+    second: TT Placeholder Art 1_4
+  - first:
+      213: -7499294167258306219
+    second: TT Placeholder Art 1_5
+  - first:
+      213: 6549034967264923897
+    second: TT Placeholder Art 1_6
+  - first:
+      213: -7525043332747956574
+    second: TT Placeholder Art 1_7
+  - first:
+      213: -966974431741609637
+    second: TT Placeholder Art 1_8
+  - first:
+      213: 7869368974601595079
+    second: TT Placeholder Art 1_9
+  - first:
+      213: -6343582221499196077
+    second: TT Placeholder Art 1_10
+  - first:
+      213: -5078092233288627460
+    second: TT Placeholder Art 1_11
+  - first:
+      213: -1623853600046359973
+    second: TT Placeholder Art 1_12
+  - first:
+      213: -7784084223813270845
+    second: TT Placeholder Art 1_13
+  - first:
+      213: -233172875804017784
+    second: TT Placeholder Art 1_14
+  - first:
+      213: 9102377885695234177
+    second: TT Placeholder Art 1_15
+  - first:
+      213: -781945186268191033
+    second: TT Placeholder Art 1_16
+  - first:
+      213: -7365050661187284238
+    second: TT Placeholder Art 1_17
+  - first:
+      213: -1773321046295310252
+    second: TT Placeholder Art 1_18
+  - first:
+      213: -7409601988495394573
+    second: TT Placeholder Art 1_19
+  - first:
+      213: 7299104718504279763
+    second: TT Placeholder Art 1_20
+  - first:
+      213: -4336476888396496720
+    second: TT Placeholder Art 1_21
+  - first:
+      213: 3726878346843451215
+    second: TT Placeholder Art 1_22
+  - first:
+      213: 8818577454207060216
+    second: TT Placeholder Art 1_23
+  - first:
+      213: -644982192503043595
+    second: TT Placeholder Art 1_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_0
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1324
+        width: 55
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0e5131549dfd3f0800000000000000
+      internalID: -873740911990415135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1361
+        width: 183
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57e00f7f0340cc70800000000000000
+      internalID: 8989258590065846110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_2
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 978
+        width: 337
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4438cbf535313220800000000000000
+      internalID: 2463808977122112589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1184
+        width: 127
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c391ea1268447f0800000000000000
+      internalID: -629230568712094606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_5
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 973
+        width: 337
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559e86610b72de790800000000000000
+      internalID: -7499294167258306219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1171
+        width: 127
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0107dba98d2ea50800000000000000
+      internalID: 6549034967264923897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 964
+        width: 95
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aee22055fca19790800000000000000
+      internalID: -7525043332747956574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 964
+        width: 95
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59f729a0ed9492f0800000000000000
+      internalID: -966974431741609637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_9
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1060
+        width: 226
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8ab91836d953d60800000000000000
+      internalID: 7869368974601595079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 857
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d9e0c449117f7a0800000000000000
+      internalID: -6343582221499196077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 861
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa492ac40ef689b0800000000000000
+      internalID: -5078092233288627460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 851
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a5ff911c9e679e0800000000000000
+      internalID: -1623853600046359973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 490
+        width: 346
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c243e9e3a069f390800000000000000
+      internalID: -7784084223813270845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_14
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 507
+        width: 337
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bf17e318a93ccf0800000000000000
+      internalID: -233172875804017784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_15
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 507
+        width: 366
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1805c38e574225e70800000000000000
+      internalID: 9102377885695234177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_16
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 809
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c668aafef8f525f0800000000000000
+      internalID: -781945186268191033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 666
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f21d2302751ac990800000000000000
+      internalID: -7365050661187284238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_18
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 666
+        width: 34
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45018d267e5e367e0800000000000000
+      internalID: -1773321046295310252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_19
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 667
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f834bccf3ecb2990800000000000000
+      internalID: -7409601988495394573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 287
+        width: 531
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de33d4b111ab4560800000000000000
+      internalID: 7299104718504279763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_21
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 36
+        width: 337
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b08f62ee3db1d3c0800000000000000
+      internalID: -4336476888396496720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 405
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fe2b05c1888b330800000000000000
+      internalID: 3726878346843451215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_23
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 36
+        width: 416
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8c746c871e16a70800000000000000
+      internalID: 8818577454207060216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TT Placeholder Art 1_24
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 154
+        width: 42
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f94769fc109c07f0800000000000000
+      internalID: -644982192503043595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
