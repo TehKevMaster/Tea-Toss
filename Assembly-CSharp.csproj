@@ -54,10 +54,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Timer.cs" />
-    <Compile Include="Assets\Scripts\FieldOfView.cs" />
-    <Compile Include="Assets\Scripts\TeaBehavior.cs" />
     <Compile Include="Assets\Scripts\SpawnHandler.cs" />
+    <Compile Include="Assets\Scripts\TeaBehavior.cs" />
+    <Compile Include="Assets\Scripts\TempPlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\RipplePostProcessor.cs" />
     <Compile Include="Assets\Scripts\BarrelBehavior.cs" />
+    <Compile Include="Assets\Scripts\FieldOfView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Materials\Ripple.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

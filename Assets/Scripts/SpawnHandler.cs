@@ -35,9 +35,6 @@ public class SpawnHandler : MonoBehaviour
     Camera mainCamera;
     private Vector2 centerOfScreen;
 
-    [SerializeField]
-    bool CRIsRunning;
-
     // Start is called before the first frame update
     void Start()
     {

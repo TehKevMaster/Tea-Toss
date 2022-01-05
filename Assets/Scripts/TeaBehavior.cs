@@ -21,10 +21,15 @@ public class TeaBehavior : MonoBehaviour
     [SerializeField]
     bool buttonPressed = false;
 
+    private RipplePostProcessor camRipple;
+
 
     // Start is called before the first frame update
     void Start()
     {
+
+        camRipple = Camera.main.GetComponent<RipplePostProcessor>();
+
         GameObject area = GameObject.FindGameObjectWithTag("Throwable Area");
         areaCollider = area.GetComponent<Collider2D>();
 
@@ -80,7 +85,8 @@ public class TeaBehavior : MonoBehaviour
         {
             if (buttonPressed)
             {
-
+                Vector2 loc = new Vector2(transform.position.x, transform.position.y + 1.5f);
+                camRipple.RippleEffect(loc);
                 buttonPressed = false;
                 spawnHandler.score += scoreValue;
 

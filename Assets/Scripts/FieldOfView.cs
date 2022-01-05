@@ -41,7 +41,7 @@ public class FieldOfView : MonoBehaviour
         if (player != null)
         {
 
-            targetCollider = player.GetComponent<Collider2D>();
+            targetCollider = player.GetComponentInChildren<BoxCollider2D>();
 
         }
 
@@ -58,9 +58,10 @@ public class FieldOfView : MonoBehaviour
 
         distance = Vector2.Distance(playerPos, selfPos);
 
+        Debug.Log("CHeck");
         if (FoVCollider != null && targetCollider != null)
         {
-
+            Debug.Log("Check2");
             ColliderCheck();
 
             if (!alerted)
@@ -125,13 +126,13 @@ public class FieldOfView : MonoBehaviour
             }
 
             alphaFloat = 1f;
-            //Debug.Log("Touching");
+            Debug.Log("Touching");
 
         } else
         {
             
             alphaFloat = 1f - (distance / maxDistance);
-            //Debug.Log("Not Touching");
+            Debug.Log("Not Touching");
 
         }
 
