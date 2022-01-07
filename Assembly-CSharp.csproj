@@ -59,8 +59,11 @@
     <Compile Include="Assets\Scripts\TempPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\RipplePostProcessor.cs" />
     <Compile Include="Assets\Scripts\BarrelBehavior.cs" />
-    <Compile Include="Assets\Scripts\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\SceneLoading.cs" />
+    <Compile Include="Assets\Scripts\FieldOfView.cs" />
+    <Compile Include="Assets\Scripts\GuardMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Boundaries.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\Ripple.shader" />
