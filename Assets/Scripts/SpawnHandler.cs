@@ -175,6 +175,8 @@ public class SpawnHandler : MonoBehaviour
 
         Debug.Log("Reseting Crate Stack");
 
+        currentCrate = 0;
+
         int children = transform.childCount;
 
         //Debug.Log("Children found: " + children);
@@ -205,8 +207,6 @@ public class SpawnHandler : MonoBehaviour
         SpawnGuards();
 
         Debug.Log("New Tea Spawn Time is " + teaSpawnTime + " seconds");
-
-        currentCrate = 0;
 
     }
 
