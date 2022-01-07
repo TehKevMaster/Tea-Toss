@@ -22,6 +22,12 @@ public class TeaBehavior : MonoBehaviour
     bool buttonPressed = false;
 
     private RipplePostProcessor camRipple;
+    public float z;
+
+    private ParticleSystem splashEffect;
+    public AudioClip splashAudio;
+    public float volume;
+    public AudioSource audioSource;
 
 
     // Start is called before the first frame update
@@ -37,6 +43,8 @@ public class TeaBehavior : MonoBehaviour
 
         GameObject spawner = GameObject.Find("Crate Stack");
         spawnHandler = spawner.GetComponent<SpawnHandler>();
+
+        splashEffect = GetComponentInChildren<ParticleSystem>();
 
         if (GetComponent<Collider2D>() != null)
         {
@@ -58,6 +66,15 @@ public class TeaBehavior : MonoBehaviour
 
         }
 
+        if(transform.parent != null)
+        {
+
+            Vector3 parentPos = transform.parent.position;
+            transform.position = new Vector3(parentPos.x, parentPos.y + 0.25f, z);
+            transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, Time.deltaTime);
+
+        }
+
     }
 
     private void ColliderCheck()
@@ -67,7 +84,6 @@ public class TeaBehavior : MonoBehaviour
         {
 
             tossable = true;
-            toss();
 
         } else
         {
@@ -78,20 +94,35 @@ public class TeaBehavior : MonoBehaviour
 
     }
 
-    private void toss()
+    public void toss()
     {
 
-        if (tossable)
-        {
-            if (buttonPressed)
-            {
-                Vector2 loc = new Vector2(transform.position.x, transform.position.y + 1.5f);
-                camRipple.RippleEffect(loc);
-                buttonPressed = false;
-                spawnHandler.score += scoreValue;
+        Vector2 loc = new Vector2(transform.position.x, transform.position.y + 1.5f);
+        camRipple.RippleEffect(loc);
+        buttonPressed = false;
+        spawnHandler.score += scoreValue;
+        Scored();
 
-            }
-        }
+    }
+
+    void Scored ()
+    {
+
+        SpriteRenderer sprite = transform.GetComponent<SpriteRenderer>();
+        sprite.enabled = false;
+
+        splashEffect.Emit(3);
+        audioSource.PlayOneShot(splashAudio, volume);
+
+        StartCoroutine(DestroyTea());
+
+    }
+
+    IEnumerator DestroyTea()
+    {
+
+        yield return new WaitForSeconds(2.5f);
+        GameObject.Destroy(transform.gameObject);
 
     }
 

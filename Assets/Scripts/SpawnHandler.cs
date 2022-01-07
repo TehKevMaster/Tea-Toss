@@ -35,6 +35,9 @@ public class SpawnHandler : MonoBehaviour
     Camera mainCamera;
     private Vector2 centerOfScreen;
 
+    [SerializeField]
+    int currentCrate = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -203,6 +206,8 @@ public class SpawnHandler : MonoBehaviour
 
         Debug.Log("New Tea Spawn Time is " + teaSpawnTime + " seconds");
 
+        currentCrate = 0;
+
     }
 
     IEnumerator SpawnTea()
@@ -261,6 +266,23 @@ public class SpawnHandler : MonoBehaviour
             ResetStack();
 
         }
+
+    }
+
+    public void GiveCrate()
+    {
+
+        Transform body = player.GetComponentInChildren<BoxCollider2D>().gameObject.transform;
+        int i = Random.Range(0, teaCratesToSpawn.Length);
+    
+        GameObject tea = Instantiate(teaCratesToSpawn[i], body.transform.position, Quaternion.identity);
+        tea.transform.SetParent(body);
+
+        GameObject crate = transform.GetChild(currentCrate).gameObject;
+        SpriteRenderer sprite = crate.GetComponent<SpriteRenderer>();
+
+        sprite.enabled = false;
+        currentCrate++;
 
     }
 
