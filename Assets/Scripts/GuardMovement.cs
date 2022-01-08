@@ -18,6 +18,7 @@ public class GuardMovement : MonoBehaviour
 
     bool once;
     public bool playerSpotted = false;                 // True if player is spotted by guard
+    public bool playedOiSound = false;
 
     #endregion
 
@@ -34,6 +35,13 @@ public class GuardMovement : MonoBehaviour
         if (fov.alerted == true)
         {
             playerSpotted = true;
+            if (!playedOiSound)
+            {
+
+                AudioManager.instance.PlayOiSound();
+                playedOiSound=true;
+
+            }
         }
 
         if (playerSpotted == false)

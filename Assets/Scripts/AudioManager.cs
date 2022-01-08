@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioClip thunder;
+    public AudioClip oi;
     public AudioSource mainSource;
 
     float randomNumber;
@@ -48,6 +49,13 @@ public class AudioManager : MonoBehaviour
         yield return new WaitForSeconds(randomNumber);
         mainSource.PlayOneShot(thunder);
         thunderSoundTrig = true;
+    }
+
+    public void PlayOiSound()
+    {
+
+        mainSource.PlayOneShot(oi);
+
     }
 
 }

@@ -415,6 +415,7 @@ GameObject:
   - component: {fileID: 756778080}
   - component: {fileID: 756778079}
   - component: {fileID: 756778078}
+  - component: {fileID: 756778081}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -486,7 +487,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1894839433}
+      - m_Target: {fileID: 756778081}
         m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
         m_MethodName: OnStartTossinClicked
         m_Mode: 1
@@ -536,6 +537,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756778076}
   m_CullTransparentMesh: 1
+--- !u!114 &756778081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756778076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be78dabbcbdd4df41b6e2472cb195f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &762259103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thunder: {fileID: 8300000, guid: 3dd5b5318971dd04493a46e62093977c, type: 3}
+  oi: {fileID: 8300000, guid: 67d60014470114348a8dc27076fade79, type: 3}
   mainSource: {fileID: 2087786004}
 --- !u!1 &1660329483
 GameObject:

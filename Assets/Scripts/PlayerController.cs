@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
                 Vector3 newRotation = new Vector3(transform.rotation.x, 1, transform.rotation.z);
                 transform.eulerAngles = newRotation;
 
-                Vector3 newScale = new Vector3(-0.5f, transform.localScale.y, transform.localScale.z);
+                Vector3 newScale = new Vector3(-0.5f, 0.5f, 0.5f);
                 footprints.transform.localScale = newScale;
 
 
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
                 Vector3 newRotation = new Vector3(transform.rotation.x, -1, transform.rotation.z);
                 transform.eulerAngles = newRotation;
 
-                Vector3 newScale = new Vector3(0.5f, transform.localScale.y, transform.localScale.z);
+                Vector3 newScale = new Vector3(0.5f, 0.5f, 0.5f);
                 footprints.transform.localScale = newScale;
 
             }
