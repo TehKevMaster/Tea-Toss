@@ -10,6 +10,8 @@ public class GuardMovement : MonoBehaviour
     public Transform[] patrolPoints;            // Array of patrol points for guard to go to
     public Transform playerPos;                 // Player's current position
 
+    FieldOfView fov;
+
     [SerializeField] float speed = 5f;          // Guard's movement speed
     [SerializeField] float waitTime = 1f;       // Guard's wait time before moving to next patrol point
     int currentPointIndex;
@@ -22,12 +24,18 @@ public class GuardMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        fov = GetComponentInChildren<FieldOfView>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (fov.alerted == true)
+        {
+            playerSpotted = true;
+        }
+
         if (playerSpotted == false)
         {
             MoveToPatrolPoint();                // Call function to move guard to next patrol point
