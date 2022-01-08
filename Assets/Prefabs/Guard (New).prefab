@@ -74,9 +74,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   playerPos: {fileID: 0}
+  foVTransform: {fileID: 0}
   speed: 5
   waitTime: 1
   playerSpotted: 0
+  playedOiSound: 0
 --- !u!114 &5882461614347744931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,9 +88,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 73395332800296316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da5156666b524d4f98d2f592cb5eaa6, type: 3}
+  m_Script: {fileID: 11500000, guid: cd27dcb7defa5b64ca47bb6f7e5cb42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minOffsetX: -0.25
+  maxOffsetX: 0.25
+  minOffsetY: -0.15
+  maxOffsetY: 4.5
 --- !u!1 &73395332941928237
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73395332941928237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.465, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 73395333699931531}

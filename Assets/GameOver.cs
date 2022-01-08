@@ -14,6 +14,7 @@ public class GameOver : MonoBehaviour
     Button playAgain;
     [SerializeField]
     Image gameOver;
+    public bool ending = false;
 
 
     // Start is called before the first frame update
@@ -30,26 +31,24 @@ public class GameOver : MonoBehaviour
 
     public void TimesUp()
     {
+        if (!ending)
+        {
+            ending = true;
+            timesUp.enabled = true;
+            playAgain.enabled = true;
+            playAgain.gameObject.GetComponent<Image>().enabled = true;
+            StartCoroutine(Wait("Title No Audio"));
 
-        timesUp.enabled = true;
-        playAgain.enabled = true;
-        playAgain.gameObject.GetComponent<Image>().enabled = true;
+        }
 
-
-    }
-
-    public void StartTossin()
-    {
-
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
 
     }
 
-    IEnumerator Wait()
+    IEnumerator Wait(string scene)
     {
 
         yield return new WaitForSeconds(waitTime);
-        LoadScene("Title Scene");
+        LoadScene(scene);
 
     }
 
@@ -62,9 +61,12 @@ public class GameOver : MonoBehaviour
 
     public void Dead()
     {
-
-        gameOver.enabled = true;
-        StartCoroutine(Wait());
+        if (!ending)
+        {
+            ending = true;
+            gameOver.enabled = true;
+            StartCoroutine(Wait("Title No Audio"));
+        }
 
     }
 

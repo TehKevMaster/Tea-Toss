@@ -7,9 +7,11 @@ public class GuardMovement : MonoBehaviour
 
     #region Variables
 
-    public Transform[] patrolPoints;            // Array of patrol points for guard to go to
+    public GameObject[] patrolPoints;          // Array of patrol points for guard to go to
     public Transform playerPos;                 // Player's current position
 
+    [SerializeField]
+    Transform foVTransform;
     FieldOfView fov;
 
     [SerializeField] float speed = 5f;          // Guard's movement speed
@@ -26,6 +28,10 @@ public class GuardMovement : MonoBehaviour
     void Start()
     {
         fov = GetComponentInChildren<FieldOfView>();
+        patrolPoints = GameObject.FindGameObjectsWithTag("Patrol Points");
+        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+
+        foVTransform = FindChild();
     }
 
     // Update is called once per frame
@@ -51,6 +57,22 @@ public class GuardMovement : MonoBehaviour
         else
         {
             MoveTowardPlayer();
+
+            float distance = Vector2.Distance(playerPos.transform.position, transform.position);
+            if(distance <= .1f)
+            {
+
+                GameOver gameOver = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<GameOver>();
+                if(gameOver.ending == false)
+                {
+
+                    gameOver.Dead();
+
+                }
+
+            }
+
+
         }
 
 
@@ -72,13 +94,24 @@ public class GuardMovement : MonoBehaviour
 
     }
 
+    void RotateTowardsTarget()
+    {
+
+        Vector2 direction = patrolPoints[currentPointIndex].transform.position - foVTransform.position;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        foVTransform.rotation = Quaternion.Euler(Vector3.forward * (angle + 90f));
+
+    }
+
 
     // Moves the guard toward  the next patrol point
     void MoveToPatrolPoint()
     {
-        if (transform.position != patrolPoints[currentPointIndex].position)
+        if (transform.position != patrolPoints[currentPointIndex].transform.position)
         {
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
+            RotateTowardsTarget();
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].transform.position, speed * Time.deltaTime);
         }
         else
         {
@@ -98,6 +131,38 @@ public class GuardMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, playerPos.position, speed * Time.deltaTime);
         }
+    }
+
+    Transform FindChild()
+    {
+
+        GameObject body = transform.Find("British Body").gameObject;
+        GameObject f = body.transform.Find("FoV").gameObject;
+        
+        if (f != null)
+        {
+
+            Transform t = f.transform;
+
+            if(t != null)
+            {
+
+                return t;
+
+            } else
+            {
+
+                return null;
+
+            }
+
+        } else
+        {
+
+            return null;
+
+        }
+
     }
 
 }

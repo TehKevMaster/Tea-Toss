@@ -135,7 +135,7 @@ MonoBehaviour:
   smoke: {fileID: 0}
   splashEffect: {fileID: 7293448382818472000, guid: 7f4f4d920858a60428789b6d82307ff0, type: 3}
   splashAudio: {fileID: 8300000, guid: ab40047b38fa9a24ca7acb7c348ef104, type: 3}
-  volume: 1
+  volume: 5
   audioSource: {fileID: 1945231623392025680}
 --- !u!50 &4260354284616455754
 Rigidbody2D:

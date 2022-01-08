@@ -4,6 +4,8 @@ ScriptsOnlyBuild:
     - AudioManager
     - Boundaries
     - FieldOfView
+    - GameOver
+    - GuardMovement
     - PlayerController
     - RipplePostProcessor
     - SceneLoading
@@ -14,14 +16,23 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -58,34 +69,50 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1460}
+      Script: {instanceID: 1462}
     - Class: 114
-      Script: {instanceID: 2086}
+      Script: {instanceID: 1528}
     - Class: 114
-      Script: {instanceID: 2426}
+      Script: {instanceID: 2088}
     - Class: 114
-      Script: {instanceID: 2444}
+      Script: {instanceID: 2116}
     - Class: 114
-      Script: {instanceID: 2610}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 2688}
+    - Class: 114
+      Script: {instanceID: 3096}
+    - Class: 114
+      Script: {instanceID: 3176}
     - Class: 114
       Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 5200}
+      Script: {instanceID: 3470}
+    - Class: 114
+      Script: {instanceID: 3702}
+    - Class: 114
+      Script: {instanceID: 4148}
+    - Class: 114
+      Script: {instanceID: 5204}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,23 +157,74 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1460}
+      Script: {instanceID: 1462}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1528}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3346}
     - Class: 114
-      Script: {instanceID: 3462}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 4144}
+      Script: {instanceID: 4148}
     - Class: 114
-      Script: {instanceID: 4554}
+      Script: {instanceID: 4558}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Title No Audio.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1462}
+    - Class: 114
+      Script: {instanceID: 1528}
+    - Class: 114
+      Script: {instanceID: 2688}
+    - Class: 114
+      Script: {instanceID: 2860}
+    - Class: 114
+      Script: {instanceID: 3096}
+    - Class: 114
+      Script: {instanceID: 3346}
+    - Class: 114
+      Script: {instanceID: 3466}
+    - Class: 114
+      Script: {instanceID: 4148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -252,10 +330,16 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: a608081e27bc9893b3af1b318b918bde
+      Hash: 07dba75e150746f4eb3e77c91d6d3605
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: ca6257d4dd19c3c45d19ea65de290aca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -282,7 +366,7 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
-      Hash: 59db5f0194f503e2ec19353f8fd80f7c
+      Hash: 089832f5d235a7e6fb5ad7f3921e3875
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
@@ -384,7 +468,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 9f488b90752cff261d80ccfe555294ef
+      Hash: 7781838add456e05603f676b2f4349e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeaBehavior
@@ -474,7 +558,7 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 70f33e6ce9fb11ba30fecb79a0ed9334
+      Hash: ea80077a9440485033d5d8ea2885594d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GuardMovement
@@ -606,7 +690,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 743f5d2214cb6488b6629f672c9f9a28
+      Hash: 114c6767ca61972af1850e72b0d9f117
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioManager
@@ -752,4 +836,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Title Scene.unity
   - Assets/Scenes/Main Scene.unity
-  playerPath: E:/Unity/Projects/Tea Toss/Builds
+  - Assets/Title No Audio.unity
+  playerPath: C:/Users/Kevin/Desktop/Tea Toss Builds/WebGL

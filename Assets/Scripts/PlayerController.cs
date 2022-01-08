@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float verticalInput;
     [SerializeField] float moveLimiter = 0.7f;
 
-    [SerializeField] float speed = 20.0f;
+    [SerializeField] float speed = 5.0f;
+    [SerializeField] float speedMultiplier = 1;
 
     [SerializeField]
     CircleCollider2D itemCheckCollider;
@@ -112,7 +113,7 @@ public class PlayerController : MonoBehaviour
             verticalInput *= moveLimiter;
         }
 
-        body.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
+        body.velocity = new Vector2(horizontalInput * (speed * speedMultiplier), verticalInput * (speed * speedMultiplier));
     }
 
     void Interact()
@@ -137,6 +138,7 @@ public class PlayerController : MonoBehaviour
 
             // Drop
             bodyObj.transform.DetachChildren();
+            speedMultiplier = 1;
 
 
 
@@ -173,6 +175,7 @@ public class PlayerController : MonoBehaviour
 
                         //Debug.Log("Stack");
                         target.parent.GetComponent<SpawnHandler>().GiveCrate();
+                        speedMultiplier = 0.85f;
 
                     }
                     
@@ -181,6 +184,7 @@ public class PlayerController : MonoBehaviour
                 {
 
                     AttachObject(target);
+                    speedMultiplier = 0.85f;
 
                 }
 

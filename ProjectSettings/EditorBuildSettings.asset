@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scene.unity
     guid: 916f548fb04e0bf4e8378cf83d052b49
+  - enabled: 1
+    path: Assets/Title No Audio.unity
+    guid: 6a5f76ec96d5ad44c946747e54cf426a
   m_configObjects: {}

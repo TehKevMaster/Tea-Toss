@@ -25,11 +25,15 @@ public class AudioManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(instance);
         }
+
+
     }
     //asdf
     private void Start()
     {
         
+
+
     }
 
     // Update is called once per frame

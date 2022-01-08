@@ -8,6 +8,8 @@ TagManager:
   - Tea
   - Throwable Area
   - Spawn Point
+  - Patrol Points
+  - Audio
   layers:
   - Default
   - TransparentFX

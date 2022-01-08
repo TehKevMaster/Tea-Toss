@@ -10,6 +10,8 @@ public class Timer : MonoBehaviour
     float secondsLeft = 177.3f;
     [SerializeField]
     Text timeText;
+    [SerializeField]
+    bool timesUp = false;
 
     // Update is called once per frame
     void Update()
@@ -25,6 +27,16 @@ public class Timer : MonoBehaviour
         {
 
             secondsLeft = 0;
+            if (!timesUp)
+            {
+
+                timesUp = true;
+                GameOver gameOver = GetComponent<GameOver>();
+
+                gameOver.TimesUp();
+
+            }
+
 
         }
 
