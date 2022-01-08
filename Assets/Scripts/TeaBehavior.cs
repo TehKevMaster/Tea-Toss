@@ -24,15 +24,19 @@ public class TeaBehavior : MonoBehaviour
     private RipplePostProcessor camRipple;
     public float z;
 
-    private ParticleSystem splashEffect;
+    public ParticleSystem smoke;
+    public ParticleSystem splashEffect;
     public AudioClip splashAudio;
     public float volume;
     public AudioSource audioSource;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
+
+
 
         camRipple = Camera.main.GetComponent<RipplePostProcessor>();
 
@@ -44,7 +48,7 @@ public class TeaBehavior : MonoBehaviour
         GameObject spawner = GameObject.Find("Crate Stack");
         spawnHandler = spawner.GetComponent<SpawnHandler>();
 
-        splashEffect = GetComponentInChildren<ParticleSystem>();
+        //splashEffect = GetComponentInChildren<ParticleSystem>();
 
         if (GetComponent<Collider2D>() != null)
         {

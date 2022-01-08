@@ -6,8 +6,8 @@ public class Boundaries : MonoBehaviour
 {
 
     Vector2 screenBounds;
-    float objectWidth;
-    float objectHeight;
+    float objectWidth = 0;
+    float objectHeight = 0;
 
     [SerializeField]
     float minOffsetX = -0.25f;
@@ -24,8 +24,8 @@ public class Boundaries : MonoBehaviour
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        objectWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x;
-        objectHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
+        //objectWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x;
+        //objectHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
     }
 
     // Update is called once per frame

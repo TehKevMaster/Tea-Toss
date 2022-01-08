@@ -24,9 +24,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Collider2D[] colliders;
     [SerializeField]
-    //List<Transform> items;
-    //[SerializeField]
     Collider2D areaCollider;
+
+    public Animator anim;
+    public ParticleSystem footprints;
 
     #endregion
 
@@ -51,6 +52,41 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        if (horizontalInput == 0 && verticalInput == 0)
+        {
+
+            anim.SetBool("isWalking", false);
+
+        }
+        else
+        {
+
+            anim.SetBool("isWalking", true);
+            footprints.Emit(1);
+
+            if (horizontalInput < 0)
+            {
+
+                Vector3 newRotation = new Vector3(transform.rotation.x, 1, transform.rotation.z);
+                transform.eulerAngles = newRotation;
+
+                Vector3 newScale = new Vector3(-0.5f, transform.localScale.y, transform.localScale.z);
+                footprints.transform.localScale = newScale;
+
+
+            }
+            else if (horizontalInput > 0)
+            {
+
+                Vector3 newRotation = new Vector3(transform.rotation.x, -1, transform.rotation.z);
+                transform.eulerAngles = newRotation;
+
+                Vector3 newScale = new Vector3(0.5f, transform.localScale.y, transform.localScale.z);
+                footprints.transform.localScale = newScale;
+
+            }
+
+        }
     }
 
     void FixedUpdate()

@@ -15,7 +15,7 @@ public class GuardMovement : MonoBehaviour
     int currentPointIndex;
 
     bool once;
-    bool playerSpotted = true;                 // True if player is spotted by guard
+    public bool playerSpotted = false;                 // True if player is spotted by guard
 
     #endregion
 

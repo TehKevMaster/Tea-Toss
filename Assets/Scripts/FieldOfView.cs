@@ -31,6 +31,8 @@ public class FieldOfView : MonoBehaviour
 
     private bool inBarrel;
 
+    private GuardMovement guard;
+
     private void Start()
     {
 
@@ -155,6 +157,10 @@ public class FieldOfView : MonoBehaviour
 
     public void SetAlerted()
     {
+
+        GuardMovement guardMovement = GetComponentInParent<GuardMovement>();
+        guardMovement.playerSpotted = true;
+
         alerted = true;
 
         if (!alert.activeInHierarchy)
